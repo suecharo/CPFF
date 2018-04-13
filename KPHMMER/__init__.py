@@ -11,8 +11,3 @@ from .convert import Convert
 from .query import Query
 from .search import Search
 from .util import check_status_code, dump_log, get_kegg, get_pfam
-
-__author__ = "Hirotaka Suetake"
-__author_email__ = "hirotaka.suetake@riken.jp"
-__version__ = "1.0"
-__release__ = "1"
