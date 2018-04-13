@@ -4,7 +4,7 @@ from setuptools import setup
 def main():
     setup(
         name="KPHMMER",
-        version="1.0.1",
+        version="1.0.2",
         description="KPHMMER: Hidden Markov Model generator for detecting KEGG PATHWAY-specific genes",
         author="Hirotaka Suetake",
         author_email="hirotaka.suetake@riken.jp",
