@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: KPHMMER
+Version: 1.0.2
+Summary: KPHMMER: Hidden Markov Model generator for detecting KEGG PATHWAY-specific genes
+Home-page: UNKNOWN
+Author: Hirotaka Suetake
+Author-email: hirotaka.suetake@riken.jp
+License: MIT
+Description: UNKNOWN
+Keywords: Life Science,Bioinfomatics,HMMER,KEGG
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics

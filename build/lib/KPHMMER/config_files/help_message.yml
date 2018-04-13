@@ -1,0 +1,32 @@
+DESCRIPTION :
+  ARGPARSER: KPHMMER; Hidden Markov Model generator for detecting KEGG pathway-specific genes written by suecharo. <hirotaka.suetake@riken.jp>
+  SUBPARSER: KPHMMER has each submethod. Refer to the help of each submethod.
+  QUERY: Receive the KEGG organism code and output the Pfam domain file in the form of yaml file. If you do not know KEGG's organism code (e.g. hsa), use search method.
+  SEARCH: Receive query keywords (e.g. human) and search KEGG's organism code (e.g. hsa).
+  ANALYSIS: Receive the Pfam domain file in the form of yaml file as input and output hmm file created by frequently detected Pfam domains in the set category.
+  CONVERT: Receive the Pfam domain file in the form of yaml file and output the gene included therein in the form of FASTA file.
+  CONFIG: Check the currently set category. Or change the setting.
+SUBPARSER:
+  QUERY: Receive the KEGG's organism code (e.g. hsa) and output the Pfam domain file in the form of yaml file.
+  SEARCH: Receive query keywords (e.g. human) and search KEGG's organism code (e.g. hsa).
+  ANALYSIS: Receive the Pfam domain file in the form of yaml file as input and output hmm file created by frequently detected Pfam domains in the set category.
+  CONVERT: Receive the Pfam domain file in the form of yaml file and output the gene included therein in the form of FASTA file.
+  CONFIG: Check the currently set category. Or change the setting.
+QUERY:
+  ORGANISM: Specify KEGG's organism code (e.g. hsa). Multiple inputs are accepted.
+  OUTPUT: Specify where output file is generated. (default = ./)
+  ANALYSIS: If you want to do analysis together, specify this option.
+SEARCH:
+  QUERY: Perform the keyword search on the input character string.
+  ALL: Display all organism codes present on KEGG. Be careful as there are many outputs.
+ANALYSIS:
+  DOMAIN: Specify Pfam domain file path in the form of yaml file. Multiple inputs are accepted.
+  OUTPUT: Specify where output file is generated. (default = ./)
+CONVERT:
+  DOMAIN: Specify Pfam domain file path in the form of yaml file. Multiple inputs are accepted.
+  OUTPUT: Specify where output file is generated. (default = ./)
+CONFIG:
+  DEFAULT: Restore config to the default values.
+  1ST: Set 1st category. Multiple inputs are accepted.
+  2ND: Set 2nd category. Multiple inputs are accepted.
+  DUPLICATE: Set which categories to place duplicates.

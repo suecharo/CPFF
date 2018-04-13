@@ -1,0 +1,36 @@
+#!python
+# coding: utf-8
+import sys
+import traceback
+
+from KPHMMER import (Analysis, Config, Convert, Query, Search,
+                     determine_submethod, get_args)
+
+
+def main():
+    args = get_args()
+    submethod = determine_submethod(args)
+    if submethod is False:
+        get_args(usage=True)
+
+    try:
+        if submethod == "query":
+            my_submethod = Query(args)
+        elif submethod == "search":
+            my_submethod = Search(args)
+        elif submethod == "analysis":
+            my_submethod = Analysis(args)
+        elif submethod == "convert":
+            my_submethod = Convert(args)
+        elif submethod == "config":
+            my_submethod = Config(args)
+        my_submethod.run()
+    except:
+        traceback.print_exc()
+        sys.exit(1)
+
+    return True
+
+
+if __name__ == "__main__":
+    main()
