@@ -1,4 +1,4 @@
-# KPHMMER : Hidden Markov Model generator for detecting KEGG pathway specific genes
+# PPFF : Hidden Markov Model generator for detecting KEGG pathway specific genes
 Generate an HMM file of Pfam-domain that is specifically found by inputting multiple species and pathways registered in KEGG
 
 ## what purpose?
